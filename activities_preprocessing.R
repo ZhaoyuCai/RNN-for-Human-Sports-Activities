@@ -8,4 +8,3 @@ p <- ggplot(data, aes(timepoint,signal),col='steelblue') +
   facet_grid(sensor ~ .,scales = "free_y") +
   labs(title="Signal for Activity 1 Subject 1",x="Time/s", y = "Signal Intensity")
 ggsave("signal.png",device="png",width=12,height=8,dpi=600)
-
